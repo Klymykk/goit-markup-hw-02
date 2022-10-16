@@ -11,8 +11,7 @@ font-family: 'Roboto', sans-serif;  */
     --logo-header-color:#000000;
     --logo-footer-color: #FFFFFF;
 
-    --primari-background-color:#F5F5F5;
-    --heder-background-color:#FFFFFF;
+    --primari-background-color:#FFFFFF;
     --team-background-color: #F5F4FA;
     --dark-background-color:#2F303A;
     
@@ -21,6 +20,7 @@ font-family: 'Roboto', sans-serif;  */
 body{
     font-family: 'Roboto', sans-serif;
     color: var(--primary-text-color);
+    background-color: var(--primari-background-color);
 }
 
 .list{
@@ -55,7 +55,7 @@ body{
 /* ------------------HEDER----------------- */
 
 .header{
-    background-color: var(--heder-background-color);
+    background-color:var(--primari-background-color);
 }
 
 .nav-link{
@@ -122,6 +122,10 @@ body{
     background-color:var(--primari-background-color);
 }
 
+.benefits-main-title{
+  /* Приховати */
+}
+
 .benefits-title{
     font-size: 14px;
     line-height: 1.14;
@@ -137,7 +141,10 @@ body{
     color: var(--primary-text-color);
 }
 
-.benefits-main-title{
+
+/* ------------------SECTION ABOUT----------------- */
+
+.about-main-title{
     font-size: 36px;
     line-height:1.16;
     text-align: center;
@@ -145,11 +152,18 @@ body{
     color: var(--title-text-color);
 }
 
+
+
 /* ------------------SECTION TEAM----------------- */
 
 .section-team{
     background-color: var(--team-background-color);
 }
+
+.team-item{
+    background-color: var(--primari-background-color);
+}
+
 
 .team-main-title{
     font-size: 36px;
@@ -181,33 +195,30 @@ body{
     background-color: var(--dark-background-color);
 }
 
-.footer-contacts,
-.footer-address{
+.footer-contacts{
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
 
-.footer-address{
-    color: var(--dark-background-text-color);
-}
-
 .footer-contacts{
     color:var(--contacts-footer-text-color);
 }
 
+.address{
+    color: var(--dark-background-text-color);
+}
+
 .footer-contacts:hover,
-.footer-contacts:focus,
-.footer-address:hover,
-.footer-address:focus{
+.footer-contacts:focus{
     color: var(--accent-color);
 }
 
 /* ------------------PORTFOLIO----------------- */
 
 .section-portfolio{
-    background-color:var(--heder-background-color);
+    background-color:var(--primari-background-color);
 }
 
 .filter-btn{
@@ -219,6 +230,7 @@ body{
     letter-spacing: 0.03em;
     color: var(--title-text-color);
     cursor: pointer;
+    background-color: var(--team-background-color);
 }
 
 .filter-btn:hover,
